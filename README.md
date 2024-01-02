@@ -6,7 +6,7 @@ DATABASE_USERNAME=""
 DATABASE_PASSWORD=""
 
 
-##Start first time
+## Start first time
 yarn install
 
 yarn start
