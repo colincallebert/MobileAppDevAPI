@@ -69,6 +69,11 @@ const deleteById = async (userid, activityid) => {
     if (!deleted) {
         throw ServiceError.notFound(`No registration with ${userid} and activityid ${activityid} exists`);
     }
+    return {
+        "userid" : 1,
+        "activityid": activityid,
+        "amount": 0
+    }
 };
 
 module.exports = {

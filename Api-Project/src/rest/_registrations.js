@@ -23,8 +23,7 @@ const updateRegistration = async (ctx) => {
 };
 
 const deleteRegistration = async (ctx) => {
-    await registrationService.deleteById(1, Number(ctx.params.activityid));
-    ctx.status = 204;
+    ctx.body = await registrationService.deleteById(1, Number(ctx.params.activityid));
 };
 
 /**

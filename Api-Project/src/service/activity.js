@@ -25,7 +25,7 @@ const getAll = async (userid) => {
 
 		items = await activitiesRepository.findAll();
 	return {
-		items,
+		activities: items,
 		count: items.length,
 	};
 };
